@@ -1,4 +1,4 @@
-FROM ghcr.io/unb-libraries/base:2.x
+FROM ghcr.io/unb-libraries/base:3.x
 
 RUN apk --no-cache add nodejs npm && \
     node --version && \
