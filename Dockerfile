@@ -1,4 +1,4 @@
-FROM ghcr.io/unb-libraries/base:3.x
+FROM ghcr.io/unb-libraries/base:3.20.x
 
 RUN apk --no-cache add nodejs npm && \
     node --version && \
@@ -12,7 +12,7 @@ LABEL ca.unb.lib.generator="node" \
   org.label-schema.name="node" \
   org.label-schema.schema-version="1.0" \
   org.label-schema.url="https://github.com/unb-libraries/docker-node" \
-  org.label-schema.vcs-ref="18.x" \
+  org.label-schema.vcs-ref="20.x" \
   org.label-schema.vcs-url="https://github.com/unb-libraries/docker-node" \
   org.label-schema.vendor="University of New Brunswick Libraries" \
   org.label-schema.version=$VERSION \
