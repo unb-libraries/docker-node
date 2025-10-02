@@ -1,8 +1,8 @@
-FROM ghcr.io/unb-libraries/base:3.20.x
+FROM ghcr.io/unb-libraries/base:3.22.x
 
 RUN apk --no-cache add nodejs npm && \
-    node --version && \
-    npm --version
+  node --version && \
+  npm --version
 
 LABEL ca.unb.lib.generator="node" \
   com.microscaling.docker.dockerfile="/Dockerfile" \
