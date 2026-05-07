@@ -10,7 +10,7 @@ jobs:
     uses: unb-libraries/dockworker/.github/workflows/build-push-notify.yaml@6.x
     with:
       image-name: "ghcr.io/unb-libraries/node"
-      push-branches: '["20.x","22.x"]'
+      push-branches: '["20.x","22.x","24.x"]'
     secrets:
       GH_CONTAINER_REGISTRY_USER: ${{ secrets.GH_CONTAINER_REGISTRY_USER }}
       GH_CONTAINER_REGISTRY_TOKEN: ${{ secrets.GH_CONTAINER_REGISTRY_TOKEN }}
