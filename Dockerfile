@@ -1,11 +1,11 @@
 FROM ghcr.io/unb-libraries/base:3.24.x
 
-RUN apk --no-cache add nodejs npm && \
+RUN apk --no-cache add nodejs-current npm && \
   node --version && \
   npm --version
 
 ARG BUILD_DATE
-ARG VCS_REF=24.x
+ARG VCS_REF=26.x
 ARG VERSION
 
 LABEL ca.unb.lib.generator="node" \
